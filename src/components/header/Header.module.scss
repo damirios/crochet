@@ -1,0 +1,16 @@
+.header {
+  flex: 0 0 80px;
+  background-color: violet;
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
