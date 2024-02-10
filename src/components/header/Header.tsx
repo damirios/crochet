@@ -1,4 +1,4 @@
-import { WidthContainer } from "@/shared";
+import { LinksEnum, WidthContainer } from "@/shared";
 import Link from "next/link";
 import { FC } from "react";
 import { HeaderMenu } from "../header-menu";
@@ -15,11 +15,12 @@ type Props = {};
 export const Header: FC<Props> = () => {
   return (
     <header className={s.header}>
-      <WidthContainer className={s.header_container}>
-        <Link className={s.header_logo} href="/">
+      <WidthContainer className={s.header__container}>
+        <Link className={s.header__logo} href={LinksEnum.HOME}>
           Logo
         </Link>
         <HeaderMenu />
+        <Link href={LinksEnum.CART}>Корзина</Link>
       </WidthContainer>
     </header>
   );

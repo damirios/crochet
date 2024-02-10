@@ -1,16 +1,16 @@
 .header {
   flex: 0 0 80px;
-  background-color: violet;
+  background-color: #ccc;
   padding: 10px 20px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.header_container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
