@@ -1,4 +1,4 @@
-import { LinksEnum, WidthContainer } from "@/shared";
+import { LinksEnum, WidthContainer } from "@src/shared";
 import Link from "next/link";
 import { FC } from "react";
 import { HeaderMenu } from "../header-menu";

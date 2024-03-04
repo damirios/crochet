@@ -1,15 +1,32 @@
 import { FC } from "react";
 
+import { IMiniCard } from "@src/shared";
+
 import { ToyMiniCard } from "../toy-mini-card";
 
 import s from "./Catalog.module.scss";
 
 type Props = {};
 
-const mockData = [
-  { name: "Irina", id: "1" },
-  { name: "Irina", id: "2" },
-  { name: "Irina", id: "3" },
+const mockData: IMiniCard[] = [
+  {
+    title: "Irina",
+    id: "1",
+    description: "Привет! ВАВАК",
+    imageSrc: "/images/Эрэна.jpg",
+  },
+  {
+    title: "Irina 2",
+    id: "2",
+    description: "Привет! ВАВАК 2",
+    imageSrc: "/images/Эрэна.jpg",
+  },
+  {
+    title: "Irina 3",
+    id: "3",
+    description: "Привет! ВАВАК 3",
+    imageSrc: "/images/Эрэна.jpg",
+  },
 ];
 
 /**
@@ -22,7 +39,7 @@ export const CatalogComponent: FC<Props> = () => {
     <div className={s.catalog}>
       <div className={s.catalog__grid}>
         {mockData.map((toy) => (
-          <ToyMiniCard key={toy.id} />
+          <ToyMiniCard key={toy.id} toyData={toy} />
         ))}
       </div>
     </div>

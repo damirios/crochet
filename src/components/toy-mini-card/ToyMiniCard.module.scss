@@ -1,0 +1,27 @@
+.card {
+  padding: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image img {
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__info {
+    align-self: start;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+}
