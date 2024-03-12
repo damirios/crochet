@@ -1,5 +1,6 @@
-import { CatalogComponent } from "@/components";
-import { FC, ReactElement } from "react";
+import { ReactElement } from "react";
+
+import { CatalogComponent } from "@src/components";
 
 type Props = {};
 

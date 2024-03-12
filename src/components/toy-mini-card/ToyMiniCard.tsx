@@ -20,24 +20,24 @@ type Props = {
 export const ToyMiniCard: FC<Props> = ({ toyData }) => {
   const { description, id, imageSrc, title } = toyData;
 
-  const link = `/catalog?id=${id}`;
+  const link = `/catalog/${id}`;
 
   return (
     <div className={s.card}>
-      <div className={s.card__image}>
-        <Image
-          src={imageSrc}
-          alt={`игрушка_${title}`}
-          width={200}
-          height={350}
-        />
-      </div>
-      <div className={s.card__info}>
-        <Link href={link}>
+      <Link href={link}>
+        <div className={s.card__image}>
+          <Image
+            src={imageSrc}
+            alt={`игрушка_${title}`}
+            width={200}
+            height={350}
+          />
+        </div>
+        <div className={s.card__info}>
           <div className={s.card__title}>{title}</div>
-        </Link>
-        <div className={s.card__description}>{description}</div>
-      </div>
+          <div className={s.card__description}>{description}</div>
+        </div>
+      </Link>
     </div>
   );
 };

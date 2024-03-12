@@ -22,12 +22,4 @@ html, body {
 
 a {
   text-decoration: none;
-  color: blue;
-  
-  transition: all 0.2s ease 0s;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: green;
 }
